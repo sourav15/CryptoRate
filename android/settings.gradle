@@ -1,0 +1,8 @@
+rootProject.name = 'AwesomeProject'
+
+include ':app'
+include ':react-native-android-library-boilerplate'
+project(':react-native-android-library-boilerplate').projectDir = new File(settingsDir, '../node_modules/react-native-android-library-boilerplate/android')
+
+include ':react-native-toast'
+project(':react-native-toast').projectDir = new File(settingsDir, '../node_modules/@remobile/react-native-toast/android')
